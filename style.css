@@ -112,26 +112,16 @@ background: radial-gradient(circle, rgba(111, 191, 126, 1) 0%, rgba(15, 59, 110,
   
 }
 .img-border{
-  position: relative;
+  /* position: relative; */
   border: 2px solid green;
   border-radius: 8px;
   width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   height: 450px;
   margin-left: 30px;
-  padding: 0px 30px;
-}
-.img1{
-  position: absolute;
-   /* left: 50px; */
-} 
-
-.img-border1{
-  position: relative;
-  border: 2px solid green;
-  border-radius: 8px;
-  width: 500px;
-  height: 450px;
-  margin-left: 30px;
+  margin-bottom: 30px;
   padding: 0px 30px;
 }
 
@@ -153,9 +143,18 @@ grid-template-columns: repeat(2, 1fr);
 .ser-container{
   background-color: rgba(9, 2, 33, 0.911) ;
 }
+
+.sevice{
+  display: flex;
+  flex-direction: column;
+}
+.card1:nth-child((odd)) {
+  flex-direction: row-reverse;
+}
 .card1{
  display: grid;
 grid-template-columns: repeat(2, 1fr);
+
 }
 .card1 img{
   width: 600px;
@@ -165,6 +164,7 @@ grid-template-columns: repeat(2, 1fr);
 }
 .card-data{
   padding: 100px;
+
 }
 .senario{
 position: relative;
@@ -196,16 +196,14 @@ position: relative;
 }
 .project-container{
   background-color: rgba(9, 2, 33, 0.911) ;
+  
 }
 
 .slideshow-container {
-  max-width: 1000px;
+  width: 100%;
   position: relative;
   margin: auto;
-  width: 100%;
   margin-top: 30px;
-  /* border: 5px solid #15ce40; */
-  /* border-radius: 15px; */
 }
 
 
@@ -219,15 +217,14 @@ position: relative;
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  transition: 2s ease;
   user-select: none;
 }
 
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  /* border-radius: 3px 0 0 3px; */
 }
 
 
@@ -401,28 +398,18 @@ position: relative;
 .img-border{
   width: 300px;
   height: 200px;
- position: relative;
+ /* position: relative; */
 }
+
 .img-border img{
   width: 300px;
   position: absolute;
 }
   
 
-.img-border1{
-  width: 300px;
-  height: 200px;
-  /* display: flex;
-  flex-direction: column; */
-  
-}
-.img-border1 img{
-  width: 300px;
-  
-}
 .card1{
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   
 }
 .txt{
