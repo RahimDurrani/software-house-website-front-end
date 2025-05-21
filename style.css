@@ -104,6 +104,7 @@ background: radial-gradient(circle, rgba(111, 191, 126, 1) 0%, rgba(15, 59, 110,
 }
 .hero-img img{
   width: 700px;
+  padding: 100px;
 }
 .abt-container{
   background-color:  rgba(9, 2, 33, 0.911); 
@@ -123,6 +124,16 @@ background: radial-gradient(circle, rgba(111, 191, 126, 1) 0%, rgba(15, 59, 110,
   position: absolute;
    /* left: 50px; */
 } 
+
+.img-border1{
+  position: relative;
+  border: 2px solid green;
+  border-radius: 8px;
+  width: 500px;
+  height: 450px;
+  margin-left: 30px;
+  padding: 0px 30px;
+}
 
 .abt-container img{
   width: 600px;
@@ -174,6 +185,15 @@ position: relative;
   font-weight: 900;
   font-size: larger;
 }
+.txt1{
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2.5rem;
+  font-weight: 900;
+  font-size: larger;
+}
 .project-container{
   background-color: rgba(9, 2, 33, 0.911) ;
 }
@@ -184,8 +204,8 @@ position: relative;
   margin: auto;
   width: 100%;
   margin-top: 30px;
-  border: 5px solid #15ce40;
-  border-radius: 15px;
+  /* border: 5px solid #15ce40; */
+  /* border-radius: 15px; */
 }
 
 
@@ -348,4 +368,74 @@ position: relative;
 
 .footer-policy-links a:hover {
   text-decoration: underline;
+}
+
+@media (max-width:768px) {
+  *{
+    overflow-x: hidden;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-img{
+    align-self: center;
+  }
+  .hero-img img{
+ width: 600px;
+  }
+.abt-container{
+  display: flex;
+  flex-direction: column;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 30px; */
+}
+.img-border{
+  width: 300px;
+  height: 200px;
+ position: relative;
+}
+.img-border img{
+  width: 300px;
+  position: absolute;
+}
+  
+
+.img-border1{
+  width: 300px;
+  height: 200px;
+  /* display: flex;
+  flex-direction: column; */
+  
+}
+.img-border1 img{
+  width: 300px;
+  
+}
+.card1{
+  display: flex;
+  flex-direction: column-reverse;
+  
+}
+.txt{
+  line-height: 1.0rem;
+  font-weight: 200;
+  font-size: small;
+}
+.senario img{
+  opacity: 0.4;
+}
+.hero-text h1{
+  font-weight: 900;
+  font-size: x-large;
+}
+
 }
