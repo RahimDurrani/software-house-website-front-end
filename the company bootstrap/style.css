@@ -1,0 +1,43 @@
+
+
+.nav-link:hover{
+    color: rgb(21, 206, 64) !important;
+    
+}
+
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+
+span{
+    color: rgb(21, 206, 64);
+}
+
+button{
+    background-color: rgba(14, 14, 75, 0.708);
+}
+
+.card{
+    background: #449151;
+background: radial-gradient(circle,rgba(68, 145, 81, 1) 0%, rgba(36, 15, 110, 1) 100%);
+}
+.rest{
+    background-color: rgba(9, 3, 45, 0.87);
+}
+ul a{
+    text-decoration: none;    
+}
+li{
+    transition: 2s;
+}
+li:hover{
+    color: #449151;
+
+}
+#border{
+    width: 300px;
+}
+
